@@ -10,16 +10,17 @@
 This project focuses on forecasting sales data using time series models, with a particular emphasis on capturing both trend and seasonality patterns. The goal is to evaluate the effectiveness of models such as ARIMA and SARIMA in providing accurate predictions for future sales.
 
 ## ⚙️ *Methodology*
-ARIMA Model (AutoRegressive Integrated Moving Average)
-The ARIMA model is used for forecasting time series data by combining three components:
+### ARIMA Model (AutoRegressive Integrated Moving Average)
+- **AR (Autoregressive)**: Uses past observations to predict future values.
+- **I (Integrated)**: Makes the data stationary by differencing.
+- **MA (Moving Average)**: Uses past forecast errors to make predictions.
+- In this project, we used **ARIMA(1,1,1)** to capture trends in the sales data, determined by **ACF** and **PACF** plots.
+- Model performance is evaluated using **AIC** and **BIC**.
 
-AR: Autoregressive, using past observations.
-I: Integrated, for making the data stationary by differencing.
-MA: Moving Average, using past forecast errors.
-In this project, we applied an ARIMA(1,1,1) model to capture trends in the sales data, using ACF and PACF plots to determine the optimal AR and MA terms. The model's performance is evaluated with AIC and BIC.
-
-SARIMAX Model (Seasonal ARIMA with Exogenous Variables)
-The SARIMAX model extends ARIMA by including seasonal patterns and external factors (exogenous variables). It is ideal for forecasting data with seasonal fluctuations. The model captures both seasonal and non-seasonal trends, improving accuracy. AIC and BIC are used to evaluate its performance.
+### SARIMAX Model (Seasonal ARIMA with Exogenous Variables)
+- Extends ARIMA by including **seasonal patterns** and **external variables**.
+- Ideal for forecasting with **seasonal fluctuations** and capturing both **seasonal** and **non-seasonal** trends.
+- Performance is evaluated using **AIC** and **BIC**.
 
 
 ## 📝 *Summary* 
