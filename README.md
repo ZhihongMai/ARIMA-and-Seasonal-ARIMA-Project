@@ -9,7 +9,7 @@
 ## 📚 *Introduction*
 This project focuses on forecasting sales data using time series models, with a particular emphasis on capturing both trend and seasonality patterns. The goal is to evaluate the effectiveness of models such as ARIMA and SARIMA in providing accurate predictions for future sales.
 
-
+## ⚙️ *Methodology*
 ARIMA Model (AutoRegressive Integrated Moving Average)
 The ARIMA model is used for forecasting time series data by combining three components:
 
